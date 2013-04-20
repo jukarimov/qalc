@@ -3,6 +3,9 @@
 
 #include <QMainWindow>
 #include <QtScript>
+#include <QFileDialog>
+#include <QMessageBox>
+#include <QRegExp>
 #include <QDebug>
 
 namespace Ui {
@@ -40,8 +43,18 @@ private slots:
     void on_BSUB_clicked();
     void on_BMUL_clicked();
     void on_BDIV_clicked();
+    void on_BDOT_clicked();
+    void on_BSQR_clicked();
+    void on_BPOW_clicked();
+    void on_BFAC_clicked();
     void on_BRUN_clicked();
     void on_BCLR_clicked();
+
+    void actionOpen();
+    void actionQuit();
+
+    void actionDiscriminant();
+    void actionAbout();
 };
 
 #endif // MAINWINDOW_H
